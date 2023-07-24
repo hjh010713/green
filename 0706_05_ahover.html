@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        color: #ccc;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        text-decoration-color: #333;
+        text-underline-offset: 10px;
+      }
+      #html5 p {
+        height: 0;
+        overflow: hidden;
+      }
+      :target ~ p {
+        height: 50px;
+        border: 1px solid #ccc;
+        display: block;
+      }
+      #new1,
+      span {
+        display: none;
+      }
+      #new1:target,
+      #new1:target ~ span {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="html5">
+      <a href="#new1">jump to new content1</a>
+      <p id="new1">Html5</p>
+      <span>하나</span>
+    </div>
+  </body>
+</html>

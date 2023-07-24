@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .banner {
+        text-align: center;
+      }
+      p {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border: 10px solid #000;
+        border-right: none;
+        border-bottom-color: transparent;
+        border-top-color: transparent;
+        margin: 50px auto;
+      }
+      label {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #000;
+        border-radius: 50px;
+      }
+      #start:checked ~ label:first-of-type,
+      #start:checked ~ label:last-of-type {
+        background: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <input type="radio" name="tri" id="start" />
+      <input type="radio" name="tri" id="stop" />
+      <p></p>
+      <label for="start">start</label>
+      <label for="stop">stop</label>
+    </div>
+  </body>
+</html>

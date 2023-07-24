@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autolayout & figma</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, "맑은 고딕", sans-serif;
+      }
+      .col {
+        width: calc(180px * 4 + 60px);
+        margin: 0 auto;
+        background: #ccc;
+        overflow: hidden;
+      } /*그룹으로 묶고 가운데로 옮기고 싶을때 부모요소에 calc 넣어주기 */
+      .col > div {
+        float: left;
+        margin-left: 20px;
+      }
+      .col > div:first-child {
+        margin-left: 0;
+      }
+      .user {
+        width: 180px;
+        height: 180px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .title {
+        width: 180px;
+        height: 35px;
+        background: #5fcb90;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #fff;
+        margin: 10px 0;
+      }
+      .title p {
+        line-height: 35px; /*글자와 이미지 수직정렬*/
+      }
+      .title p:first-child {
+        float: left;
+        margin-left: 20px;
+        line-height: 35px;
+      }
+      .title p:last-child {
+        float: right;
+        margin-right: 20px;
+      }
+      .title img {
+        vertical-align: middle;
+      }
+      .desc {
+        width: 180px;
+        font-size: 12px;
+        text-indent: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /*표시할 수 있는 줄 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 20px;
+        line-height: 2; /*행간을 조절하는 방법 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col">
+      <div>
+        <p class="user"><img src="./images/user.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arow.svg" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arow.svg" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arow.svg" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arow.svg" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+      <div>
+        <p class="user"><img src="./images/user01.jpg" alt="user01" /></p>
+        <div class="title">
+          <p>List Title</p>
+          <p><img src="./images/arrow.png" alt="arrow" /></p>
+        </div>
+        <p class="desc">
+          모형의 시각 프로젝트 디자인 용도로 보여줄 같은 채워지기 폰트, 때 로렘
+          디자인 그래픽 로렘 로렘 문장 지칭하는 내용이 이런 채워지기 사용할
+          출판이나 텍스트로, 사용할 때 용어로도 입숨은 출판이나 그래픽 사용하는
+          무언가를 글로도 사용하는 분야에서 용어로도 내용이 지칭하는 채움 때로
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

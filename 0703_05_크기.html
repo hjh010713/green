@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        font-size: 150%; /*16px=12px=100% */
+      }
+      .wrap > div {
+        border: 1px solid #000;
+      }
+      .a {
+        width: 2em; /*16*2=32px */
+      }
+      .b {
+        font-size: 2em; /*16*2=32px */
+        width: 2em;
+      }
+      .c {
+        width: 2rem;
+      } /*최상위인 html로 기준이 맞춰져서 기본 100%에 맞춰짐 그래서 a보다 작음 왜냐면 a는 부모인 wrap폰트 사이즈가 200%이기 때문에 2배정도 차이가 남 */
+      .d {
+        width: 160px; /*부모가 뭐든 얘는 200을 갖는다 */
+      }
+      .e {
+        width: 10em; /*16px*2(부모인 워랩이 200이기때문에 2를 곱한거임 만약 150%면 1.5를 하는거임)*10=320px*/
+      }
+      .h {
+        font-size: 16px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="a">a</div>
+      <div class="b">b</div>
+      <div class="c">c</div>
+      <div class="d">d</div>
+      <div class="e">e</div>
+      <div class="h">h</div>
+    </div>
+  </body>
+</html>

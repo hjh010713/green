@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrap {
+        text-align: center;
+        height: 1080px;
+        width: 1920px; /*가로값을 줘야 거기에 맞춰 수평정렬이됨 */
+        display: table-cell;
+        vertical-align: middle; /* 높이값을 줘야 수직정렬이 시작이 됨 */
+        border: 1px solid #000; /*이거는상자를 만들어서 수직정렬이 되었는지 확인을 위해 */
+      }
+      .inner {
+        display: inline-block; /*수평의 가운데로 가려면 인라인속성을 줘야함 */
+        width: 500px;
+        height: 500px;
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

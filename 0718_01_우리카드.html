@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .clearfix::after,
+      .clearfix::before {
+        content: "";
+        display: block;
+      }
+      .clearfix::after {
+        clear: both;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .quickmenu {
+        width: 1080px;
+        margin: 0 auto;
+      }
+      .quickmenu li {
+        position: relative;
+        width: calc(100% / 4);
+        float: left;
+        text-align: center;
+      }
+
+      .quickmenu li .special {
+        width: 100%;
+        height: 247px;
+      }
+      .quickmenu li .special img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .quickmenu li .desc p {
+        position: relative;
+        width: 192px;
+        top: 40px;
+        right: -50px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .quickmenu li .desc span {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .quickmenu li::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 1px;
+        height: 200px;
+        background: #ccc;
+      }
+      .quickmenu li:last-child:after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="quickmenu clearfix">
+      <li>
+        <div class="special">
+          <img src="./images/우리카드/해외이용의 정석.png" alt="" />
+        </div>
+        <div class="desc">
+          <p><span>해외이용의 정석</span></p>
+          <p>여행, 직구, 항공<br />무엇이든 우리카드로</p>
+        </div>
+      </li>
+      <li>
+        <img src="./images/우리카드/MY Pick 서비스.png" alt="" />
+        <div class="desc">
+          <p><span>My Pick 서비스</span></p>
+          <p>혜택도 맞춤!<br />나만을 위한 맞춤 혜택</p>
+        </div>
+      </li>
+      <li>
+        <img src="./images/우리카드/우리V클럽.png" alt="" />
+        <div class="desc">
+          <p><span>우리V클럽</span></p>
+          <p>특별함을 원하는<br />고객을 위한 VIP우대 혜택</p>
+        </div>
+      </li>
+      <li>
+        <img src="./images/우리카드/우리 Point.png" alt="" />
+        <div class="desc">
+          <p><span>우리 Point</span></p>
+          <p>차곡차곡 쌓아<br />다양한 곳에서 사용가능</p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
